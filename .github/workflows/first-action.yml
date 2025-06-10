@@ -1,0 +1,11 @@
+name: First workflow
+on: workflow_dispatch  #waits for the user to trigger workflow manually
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: fist-flow
+        run: echo "hello"
+      - name: second-flow
+        run: echo "good bye"
+        
